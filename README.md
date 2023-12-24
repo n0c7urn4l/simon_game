@@ -1,4 +1,4 @@
-# Simon Game
+# Simon Game https://n0c7urn4l.github.io/simon_game/
 
 This is a simple implementation of the classic Simon game using JavaScript, jQuery, HTML, and CSS.
 
@@ -26,4 +26,4 @@ The game is implemented in a single JavaScript file, `game.js`.
 
 ## How to Run
 
-Open `index.html` in your web browser to start the game.
+Open https://n0c7urn4l.github.io/simon_game/ in your web browser to start the game.
