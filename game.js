@@ -8,6 +8,7 @@ var blueSound = new Audio("./sounds/blue.mp3");
 var yellowSound = new Audio("./sounds/yellow.mp3");
 var redSound = new Audio("./sounds/red.mp3");
 var greenSound = new Audio("./sounds/green.mp3");
+var wrongSound = new Audio("./sounds/wrong.mp3");
 
 /**
  * Generates the next sequence for the Simon game.
@@ -108,6 +109,7 @@ $(document).on("click","div[type='button']",(event)=>{
       }, 1000);
     }
   }else{
+    wrongSound.play();
     $('h1').text("Game Over, Press A to Restart");
   }
 });
