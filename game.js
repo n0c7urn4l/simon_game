@@ -109,7 +109,11 @@ $(document).on("click","div[type='button']",(event)=>{
       }, 1000);
     }
   }else{
+    $("body").addClass("game-over");
     wrongSound.play();
+    setTimeout(function () {
+      $("body").removeClass("game-over");
+    }, 200);
     $('h1').text("Game Over, Press A to Restart");
   }
 });
