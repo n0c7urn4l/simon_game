@@ -19,13 +19,13 @@ function nextSequence(){
     console.log("level: "+level)  
     var randomNumber = Math.floor(Math.random()*4);
     var randomChosenColor = buttonColors[randomNumber];
-    console.log("random color: "+randomChosenColor);
+    // console.log("random color: "+randomChosenColor);
     animatePress(randomChosenColor);
     playSound(randomChosenColor);
     gamePattern.push(randomChosenColor);
     currentLevel = 0;
     level++;
-    console.log("game pattern: "+gamePattern);
+    // console.log("game pattern: "+gamePattern);
 }
 
 /**
@@ -68,7 +68,7 @@ function animatePress(currentColor) {
  * @returns {boolean} - Returns true if the user's clicked pattern matches the game pattern, otherwise false.
  */
 function checkAnswer(currentLevel){
-    console.log("current level: "+currentLevel);
+    // console.log("current level: "+currentLevel);
     if(!(gamePattern[currentLevel] === userClickedPattern[currentLevel])){
         console.log("wrong");
         return false;
@@ -78,7 +78,7 @@ function checkAnswer(currentLevel){
 }
 
 $(document).keypress((event) => {
-  console.log(event.key);
+  // console.log(event.key);
   if(event.key === "a" || event.key === "A"){
     gamePattern = [];
     userClickedPattern = [];
@@ -93,9 +93,9 @@ $(document).keypress((event) => {
 
 $(document).on("click","div[type='button']",(event)=>{
   var userChosenColor = event.target.id;
-  console.log("clicked tile: "+event.target.id);
+  // console.log("clicked tile: "+event.target.id);
   userClickedPattern.push(userChosenColor);
-  console.log("user pattern: "+userClickedPattern);
+  // console.log("user pattern: "+userClickedPattern);
   playSound(userChosenColor);
   animatePress(userChosenColor);
   if(checkAnswer(currentLevel)){
