@@ -51,3 +51,28 @@ body {
   box-shadow: 0 0 20px white;
   background-color: grey;
 }
+
+.AContainer{
+  display: inline-flex;
+  justify-content: space-around;
+  margin: 5%;
+}
+
+.A{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 8px solid #FEF2BF;
+  height: 5rem;
+  width: 5rem;
+  border-radius: 50%;
+}
+
+h2{
+  display: inline-block;
+  font-family: 'Press Start 2P', cursive;
+  font-size: 3rem;
+  color: red;
+  margin-left: 5px;
+  
+}
