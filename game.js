@@ -125,6 +125,6 @@ $(document).on("click","div[type='button']",(event)=>{
     setTimeout(function () {
       $("body").removeClass("game-over");
     }, 200);
-    $('h1').text("Game Over, Press A to Restart\n Max Level: "+level);
+    $('h1').text("Game Over, Press A to Restart Max Level: "+level);
   }
 });
