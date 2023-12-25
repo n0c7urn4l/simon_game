@@ -77,6 +77,17 @@ function checkAnswer(currentLevel){
     console.log("right");
     return true;
 }
+// Add a click event listener to the h2 element
+$("h2").on("click", function() {
+    gamePattern = [];
+    userClickedPattern = [];
+    level = 0;
+    currentLevel = 0;
+    setTimeout(() => {
+      nextSequence();
+    }, 1000);
+
+});
 
 $(document).keypress((event) => {
   // console.log(event.key);
